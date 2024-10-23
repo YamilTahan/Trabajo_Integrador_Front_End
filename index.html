@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integrador Front End</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- text_font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
+  </head>
+  <body>
+    <header>
+      <div class="containerPrincipalHeader">
+        <div class="containerContentHeader">
+          <div class="headerSearch">
+            <input class="inputHeader" id="inputHeader" placeholder="Buscar un elemento" type="text">
+            <button id="buttonSearch" class="buttonSearch">
+              <span class="material-symbols-outlined">
+              search
+              </span>
+            </button>  
+          </div>
+          <div>
+            <button class="buttonAdd" id="buttonAddElement">Agregar Elemento
+              <span class="material-symbols-outlined">
+                library_add
+                </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+
+      <!-- FILTROS -->
+      <div class="containerView">
+        <aside class="listAside">
+          <h2>Categorías
+            <span class="material-symbols-outlined">
+              sort
+            </span>
+          </h2> 
+            <ul id="listFilter">
+            </ul>
+        </aside>
+
+        <!-- STORE -->
+        <div class="store" id="storeContainer"></div>
+
+        <!-- POP UP -->
+         <div class="popUpContainer_principal" id="modalPopUp">
+          <div class="popUpContainer">
+            <div class="containerTitlePopUp">
+              <h1>Agregar o modificar un producto</h1>
+            </div>
+            <div class="containerInputs_popUp">
+              <input id="nombre" placeholder="Ingrese un nombre" type="text">
+              <input id="img" placeholder="Ingrese una imágen" type="text">
+              <input id="precio" placeholder="Precio" value="0" type="number">
+              <select id="categoria">
+                <option value="" disabled selected>Seleccione una categoría</option>
+                <option value="Hamburguesas">Hamburguesas</option>
+                <option value="Gaseosas">Gaseosas</option>
+                <option value="Papas">Papas</option>
+              </select>
+            </div>
+            <div class="containerButtonsPopUp">
+              <button class="buttonsPopUp accept" id="acceptButton">Aceptar</button>
+              <button class="buttonsPopUp cancel" id="cancelButton">Cancelar</button>
+              <button class="buttonsPopUp delete" id="deleteButton">Eliminar</button>
+            </div>
+          </div>
+         </div>
+      </div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
