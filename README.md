@@ -29,6 +29,7 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado [Node.js](https://n
 1. Abre el proyecto en Visual Studio Code.
 2. Abre la terminal integrada en Visual Studio Code.
 3. Ejecuta el siguiente comando para iniciar la aplicación:
+4. 
    ```bash
    npm run dev
-4. Abrir el puerto indicado por la terminal en el navegador de preferencia.
+5. Abrir el puerto indicado por la terminal en el navegador de preferencia.
